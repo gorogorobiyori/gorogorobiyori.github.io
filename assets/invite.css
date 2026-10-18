@@ -1,0 +1,163 @@
+/*
+ * 招待ページの共通スタイル。アプリごとの色は各ページの :root で上書きする
+ * (--bg / --surface / --text / --accent / --accent-text / --secondary / --secondary-text)。
+ * 外部フォントは読み込まない(閲覧者の情報を第三者に送らないため)。端末の丸ゴシックを使う。
+ */
+:root {
+  --bg: #fff8ef;
+  --surface: #ffffff;
+  --text: #4a3f3a;
+  --accent: #ff9b85;
+  --accent-text: #ffffff;
+  --secondary: #a8e6cf;
+  --secondary-text: #2f4a40;
+  color-scheme: light dark;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-rounded, "Hiragino Maru Gothic ProN", "Hiragino Sans", system-ui, sans-serif;
+  line-height: 1.7;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  padding: max(24px, env(safe-area-inset-top)) 16px max(24px, env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 440px;
+  text-align: center;
+}
+
+.icon {
+  width: 88px;
+  height: 88px;
+  border-radius: 22px;
+  margin-top: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.eyebrow {
+  margin: 12px 0 0;
+  font-size: 14px;
+  font-weight: 700;
+  opacity: 0.6;
+}
+
+h1 {
+  margin: 4px 0 8px;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.lead {
+  margin: 0 0 20px;
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.step {
+  background: var(--surface);
+  border-radius: 20px;
+  padding: 16px;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 15px 16px;
+  border: 0;
+  border-radius: 18px;
+  font: inherit;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.button:active { transform: scale(0.98); }
+.button.primary { background: var(--accent); color: var(--accent-text); }
+.button.secondary { background: var(--secondary); color: var(--secondary-text); }
+.button.small {
+  width: auto;
+  flex-shrink: 0;
+  padding: 8px 14px;
+  font-size: 14px;
+  background: var(--accent);
+  color: var(--accent-text);
+}
+
+.hint {
+  margin: 10px 0 0;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+#not-opened { color: var(--accent); opacity: 1; font-weight: 700; }
+
+.status {
+  min-height: 1.7em;
+  margin: 4px 0 12px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.fallback {
+  text-align: left;
+  font-size: 13px;
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 12px 16px;
+}
+
+.fallback summary { cursor: pointer; font-weight: 700; opacity: 0.8; }
+.fallback ol { padding-left: 1.4em; margin: 8px 0; }
+
+.copybox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.copybox code {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-size: 12px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: var(--bg);
+  -webkit-user-select: all;
+  user-select: all;
+}
+
+footer {
+  max-width: 440px;
+  margin-top: 24px;
+  font-size: 11px;
+  text-align: center;
+  opacity: 0.5;
+}
+
+[hidden] { display: none !important; }

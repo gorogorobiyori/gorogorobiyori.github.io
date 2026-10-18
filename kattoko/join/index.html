@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <title>カットコ！への招待</title>
+  <!-- LINEなどでリンクを送った時のプレビュー表示 -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="カットコ！の買い物リストへの招待">
+  <meta property="og:description" content="買い物リストを一緒に使いましょう。ボタンひとつで参加できます。">
+  <meta property="og:image" content="https://gorogorobiyori.github.io/kattoko/icon.png">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../../assets/invite.css">
+  <style>
+    /* カットコの配色(アプリのAsset Catalogと同じ値) */
+    :root {
+      --bg: #fff8ef;
+      --surface: #ffffff;
+      --text: #4a3f3a;
+      --accent: #ff9b85;
+      --accent-text: #ffffff;
+      --secondary: #a8e6cf;
+      --secondary-text: #2f4a40;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #211d1b;
+        --surface: #302a27;
+        --text: #f0e7e0;
+        --accent: #f58c77;
+        --accent-text: #ffffff;
+        --secondary: #5fc7a3;
+        --secondary-text: #16261f;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" id="invite" hidden>
+    <img class="icon" src="../icon.png" alt="" width="88" height="88">
+    <p class="eyebrow">カットコ！</p>
+    <h1>買い物リストへの招待です</h1>
+    <p class="lead">家族から、カットコ！の買い物リストに招待されています。下のボタンから参加できます。</p>
+
+    <section class="step">
+      <h2>カットコ！をお持ちの方</h2>
+      <a class="button primary" data-action="open" href="#">カットコ！で参加する</a>
+      <p class="hint" id="not-opened" hidden>アプリが開かないときは、App Storeでカットコ！を最新版にアップデートしてから、もう一度押してください。</p>
+    </section>
+
+    <section class="step">
+      <h2>まだお持ちでない方</h2>
+      <a class="button secondary" data-action="install" href="https://apps.apple.com/jp/app/id6815024317">インストールする（無料）</a>
+      <p class="hint">招待リンクをコピーしてから、App Storeを開きます。インストールしたカットコ！を開くと「招待を受け取りましたか？」と表示されるので、［ペースト］を押すと参加できます。</p>
+    </section>
+
+    <p class="status" id="status" role="status" aria-live="polite"></p>
+
+    <details class="fallback" id="fallback">
+      <summary>うまくいかないとき</summary>
+      <ol>
+        <li>LINEなどのアプリの中で開いている場合は、画面のメニューから「ブラウザで開く」を選んで、もう一度お試しください。</li>
+        <li>または、下の招待リンクをコピーしてから、カットコ！の「設定」→「かっとこリストを共有」→「コピーした招待リンクで参加」を押してください。</li>
+      </ol>
+      <div class="copybox">
+        <code id="share-url"></code>
+        <button type="button" class="button small" data-action="copy">コピー</button>
+      </div>
+    </details>
+  </main>
+
+  <main class="card" id="invalid" hidden>
+    <img class="icon" src="../icon.png" alt="" width="88" height="88">
+    <p class="eyebrow">カットコ！</p>
+    <h1>招待リンクを読み取れませんでした</h1>
+    <p class="lead">リンクの一部が欠けている可能性があります。お手数ですが、招待してくれた方にもう一度送ってもらってください。</p>
+    <a class="button secondary" href="https://apps.apple.com/jp/app/id6815024317">App Storeでカットコ！を見る</a>
+  </main>
+
+  <noscript>
+    <p class="lead">このページを表示するには、JavaScriptを有効にしてください。</p>
+  </noscript>
+
+  <footer>
+    このページは招待の案内を表示するだけのページです。招待の情報はお使いの端末の中だけで扱われ、どこにも送信されません。<br>
+    カットコ！ ／ ごろごろ日和
+  </footer>
+
+  <script>
+    // アプリごとの設定(アプリのInfo.plistのURLスキーム・App StoreのURLと揃える)
+    window.INVITE_CONFIG = {
+      scheme: "kattoko",
+      appStoreURL: "https://apps.apple.com/jp/app/id6815024317"
+    };
+  </script>
+  <script src="../../assets/invite.js"></script>
+</body>
+</html>
