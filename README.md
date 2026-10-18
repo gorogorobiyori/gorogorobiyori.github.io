@@ -13,7 +13,7 @@ assets/invite.css    招待ページの共通スタイル(色は各ページで�
 .nojekyll            Jekyllの加工を止める
 ```
 
-現在のアプリ: `kattoko`(カットコ！)・`onedari`(おねだり！)
+現在のアプリ: `kattoko`(カットコ！)・`onedari`(おねだり！)・`kozukai`(KOZUKAI)
 
 ## 招待ページの仕組み
 
