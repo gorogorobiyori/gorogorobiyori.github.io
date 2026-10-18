@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <title>KOZUKAIへの招待</title>
+  <!-- LINEなどでリンクを送った時のプレビュー表示 -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="KOZUKAI おこづかいの確認のお願い">
+  <meta property="og:description" content="おこづかいの「確認する人」への招待です。ボタンひとつで参加できます（KOZUKAIは無料で使えます）。">
+  <meta property="og:image" content="https://gorogorobiyori.github.io/kozukai/icon.png">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../../assets/invite.css">
+  <style>
+    /* KOZUKAIの配色(アプリのAsset Catalogと同じ値。クラフト×ディープグリーン) */
+    :root {
+      --bg: #f7f3ea;
+      --surface: #ffffff;
+      --text: #2b3a33;
+      --accent: #2f6b4f;
+      --accent-text: #ffffff;
+      --secondary: #e3eee7;
+      --secondary-text: #2b5a43;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c201e;
+        --surface: #262b28;
+        --text: #ece7dd;
+        --accent: #7fc3a0;
+        --accent-text: #1c201e;
+        --secondary: #2e3d35;
+        --secondary-text: #9ed6b8;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" id="invite" hidden>
+    <img class="icon" src="../icon.png" alt="" width="88" height="88">
+    <p class="eyebrow">KOZUKAI</p>
+    <h1>おこづかいの確認のお願いです</h1>
+    <p class="lead">家族から、KOZUKAIでおこづかいの「確認する人」に招待されています。下のボタンから参加できます（KOZUKAIは無料で使えます）。</p>
+
+    <section class="step">
+      <h2>KOZUKAIをお持ちの方</h2>
+      <a class="button primary" data-action="open" href="#">KOZUKAIで参加する</a>
+      <p class="hint" id="not-opened" hidden>アプリが開かないときは、App StoreでKOZUKAIを最新版にアップデートしてから、もう一度押してください。</p>
+    </section>
+
+    <section class="step">
+      <h2>まだお持ちでない方</h2>
+      <a class="button secondary" data-action="install" href="https://apps.apple.com/jp/app/id__APP_STORE_ID__">インストールする（無料）</a>
+      <p class="hint">招待リンクをコピーしてから、App Storeを開きます。インストールしたKOZUKAIを開くと「招待を受け取りましたか？」と表示されるので、［ペースト］を押すと参加できます。</p>
+    </section>
+
+    <p class="status" id="status" role="status" aria-live="polite"></p>
+
+    <details class="fallback" id="fallback">
+      <summary>うまくいかないとき</summary>
+      <ol>
+        <li>LINEなどのアプリの中で開いている場合は、画面のメニューから「ブラウザで開く」を選んで、もう一度お試しください。</li>
+        <li>または、下の招待リンクをコピーしてから、KOZUKAIの「設定」→「コピーした招待リンクを開く」を押してください。</li>
+      </ol>
+      <div class="copybox">
+        <code id="share-url"></code>
+        <button type="button" class="button small" data-action="copy">コピー</button>
+      </div>
+    </details>
+  </main>
+
+  <main class="card" id="invalid" hidden>
+    <img class="icon" src="../icon.png" alt="" width="88" height="88">
+    <p class="eyebrow">KOZUKAI</p>
+    <h1>招待リンクを読み取れませんでした</h1>
+    <p class="lead">リンクの一部が欠けている可能性があります。お手数ですが、招待してくれた方にもう一度送ってもらってください。</p>
+    <a class="button secondary" href="https://apps.apple.com/jp/app/id__APP_STORE_ID__">App StoreでKOZUKAIを見る</a>
+  </main>
+
+  <noscript>
+    <p class="lead">このページを表示するには、JavaScriptを有効にしてください。</p>
+  </noscript>
+
+  <footer>
+    このページは招待の案内を表示するだけのページです。招待の情報はお使いの端末の中だけで扱われ、どこにも送信されません。<br>
+    KOZUKAI ／ ごろごろ日和
+  </footer>
+
+  <script>
+    // アプリごとの設定(アプリのInfo.plistのURLスキーム・App StoreのURLと揃える)
+    window.INVITE_CONFIG = {
+      scheme: "kozukai",
+      appStoreURL: "https://apps.apple.com/jp/app/id__APP_STORE_ID__"
+    };
+  </script>
+  <script src="../../assets/invite.js"></script>
+</body>
+</html>
