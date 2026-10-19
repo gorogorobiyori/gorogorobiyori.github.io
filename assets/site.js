@@ -69,6 +69,10 @@
       targets.forEach(function (target) {
         var exclude = target.getAttribute("data-exclude");
         var list = apps.filter(function (a) { return a.slug !== exclude; });
+        // 「近日公開」の枠（data-soon）は残して最後に並べる。apps.json に載ったら（＝公開したら）消す
+        var soon = Array.prototype.filter.call(target.querySelectorAll("[data-soon]"), function (li) {
+          return !apps.some(function (a) { return a.slug === li.getAttribute("data-soon"); });
+        });
         if (!list.length) { // 自分しかいなければ欄ごと隠す
           var section = target.closest("section");
           if (section && exclude) section.hidden = true;
@@ -76,6 +80,7 @@
         }
         target.textContent = "";
         list.forEach(function (a) { target.appendChild(card(a)); });
+        soon.forEach(function (li) { target.appendChild(li); });
       });
     })
     .catch(function () { /* 予備の一覧をそのまま見せる */ });
