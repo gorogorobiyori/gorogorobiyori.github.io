@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="referrer" content="no-referrer">
+  <title>ごろごろ日和</title>
+  <meta name="description" content="家族の毎日に、小さな楽しみを。ごろごろ日和は、家族やパートナーと気軽に使える小さなiPhoneアプリをつくっています。広告なし・サブスクなし。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ごろごろ日和">
+  <meta property="og:description" content="家族の毎日に、小さな楽しみを。広告なし・サブスクなし。">
+  <meta property="og:url" content="https://gorogorobiyori.github.io/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LINE+Seed+JP:wght@400;700;800&display=swap">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="38" cy="24" r="14" fill="var(--sun)"/>
+        <path d="M14 46a10 10 0 0 1 9.6-10 13 13 0 0 1 25.2 3.4A8 8 0 0 1 48 56H18a8 8 0 0 1-4-10z" fill="var(--surface)" stroke="var(--sub)" stroke-width="2.5" stroke-linejoin="round"/>
+      </svg>
+      ごろごろ日和
+    </a>
+    <nav class="site-nav" aria-label="サイト内">
+      <a href="/support/">サポート</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <h1><span>家族の毎日に、</span><span>小さな楽しみを。</span></h1>
+      <p>いっしょに買い物リストをつくったり、欲しいものを見せあったり。家族やパートナーと気軽に使える、小さなiPhoneアプリをつくっています。</p>
+    </div>
+  </section>
+
+  <section class="section apps" id="apps" aria-labelledby="apps-title">
+    <div class="wrap">
+      <h2 id="apps-title" class="vh">アプリ</h2>
+      <!-- apps.json から並べる。読み込めないときは、下に書いた予備の一覧がそのまま出る -->
+      <ul class="app-grid" data-apps>
+        <li class="app-card has-shot" style="--card-accent:#ff9b85"><img src="/kattoko/icon.png" alt="" width="72" height="72"><div><h3><a href="/kattoko/">カットコ！</a></h3><p>家族で使える買い忘れ防止リスト</p><div class="links"><a class="store" href="https://apps.apple.com/jp/app/id6815024317">App Storeで見る</a><a href="/kattoko/">くわしく見る</a></div></div><div class="shot" aria-hidden="true"><img src="/kattoko/screens/1.jpg" alt="" width="540" height="1171" loading="lazy"></div></li>
+        <li class="app-card has-shot" style="--card-accent:#a0666a"><img src="/mataiko/icon.png" alt="" width="72" height="72"><div><h3><a href="/mataiko/">MATAIKO</a></h3><p>行きたい・行ったを、自分だけに</p><div class="links"><a class="store" href="https://apps.apple.com/jp/app/id6818145213">App Storeで見る</a><a href="/mataiko/">くわしく見る</a></div></div><div class="shot" aria-hidden="true"><img src="/mataiko/screens/1.jpg" alt="" width="540" height="1171" loading="lazy"></div></li>
+        <li class="app-card has-shot" style="--card-accent:#e2725b"><img src="/onedari/icon.png" alt="" width="72" height="72"><div><h3><a href="/onedari/">おねだり！</a></h3><p>欲しいものを、大切な人にだけ</p><div class="links"><a class="store" href="https://apps.apple.com/jp/app/id6820086568">App Storeで見る</a><a href="/onedari/">くわしく見る</a></div></div><div class="shot" aria-hidden="true"><img src="/onedari/screens/1.jpg" alt="" width="540" height="1171" loading="lazy"></div></li>
+        <!-- 近日公開：apps.json には載せない（アプリ内の宣伝に出さないため）。公開したら apps.json に足せば、この枠は自動で消える -->
+        <li class="app-card has-shot is-soon" data-soon="kozukai" style="--card-accent:#2f6b4f"><img src="/kozukai/icon.png" alt="" width="72" height="72"><div><h3>KOZUKAI</h3><p>立て替えをメモして、おこづかいに</p><div class="links"><span class="soon-badge">近日公開</span></div></div><div class="shot" aria-hidden="true"><img src="/kozukai/screens/1.jpg" alt="" width="540" height="1171" loading="lazy"></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="promises" aria-labelledby="promises-title">
+    <div class="wrap">
+      <h2 id="promises-title">大事にしていること</h2>
+      <p class="lead">どのアプリも、同じ約束でつくっています。</p>
+      <ul class="promises">
+        <li><strong>広告を出しません</strong><span>使っている途中に、広告で邪魔をしません。</span></li>
+        <li><strong>サブスクはありません</strong><span>基本はすべて無料。家族と共有する機能だけ、買い切りです。</span></li>
+        <li><strong>データを集めません</strong><span>記録は、あなたの端末と、あなた自身のiCloudの中だけ。開発者は見られません。</span></li>
+        <li><strong>日本の家族のために</strong><span>日本の暮らしに合わせた言葉と使い方で、小さく丁寧につくっています。</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="contact-title">
+    <div class="wrap">
+      <h2 id="contact-title">お問い合わせ</h2>
+      <p class="lead">使い方のご質問や不具合のご報告は、サポートのページからどうぞ。</p>
+      <a class="btn" href="/support/">サポートを見る</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 ごろごろ日和</span>
+    <span><a href="/privacy/">このサイトのプライバシー</a></span>
+  </div>
+</footer>
+
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

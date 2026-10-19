@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="referrer" content="no-referrer">
+  <title>カットコ！ — 思いついたら、すぐカットコ！｜ごろごろ日和</title>
+  <meta name="description" content="家族で使える買い忘れ防止リスト。思いついたらすぐメモ、お店でタップしてチェック。家族とリストを共有できます。広告なし・サブスクなし。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="カットコ！ — 思いついたら、すぐカットコ！">
+  <meta property="og:description" content="家族で使える買い忘れ防止リスト。思いついたらすぐメモ、お店でタップしてチェック。家族とリストを共有できます。広告なし・サブスクなし。">
+  <meta property="og:image" content="https://gorogorobiyori.github.io/kattoko/icon.png">
+  <meta property="og:url" content="https://gorogorobiyori.github.io/kattoko/">
+  <meta name="apple-itunes-app" content="app-id=6815024317">
+  <link rel="icon" href="/kattoko/icon.png">
+  <link rel="apple-touch-icon" href="/kattoko/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LINE+Seed+JP:wght@400;700;800&display=swap">
+  <link rel="stylesheet" href="/assets/site.css">
+  <style>
+    /*
+      ===== アプリごとに変えるところ（1）配色 =====
+      アプリのAsset Catalogと同じ値。カットコ！は「ピンク×クリーム」。ピンクのボタンは文字を濃い茶色にする
+    */
+    :root {
+      --bg: #fff8ee;
+      --surface: #ffffff;
+      --quiet: #ffffff;
+      --text: #493e39;
+      --sub: #7a6d66;
+      --accent: #ff9b85;
+      --accent-text: #493e39;
+      --accent-soft: #ffe6df;
+      --accent-strong: #a84a36;
+      --sun: #fcebc7;
+      --rule: #f1e6d8;
+    }
+    a { color: var(--accent-strong); }
+    .btn { color: var(--accent-text); }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #201d1b;
+        --surface: #2f2a27;
+        --quiet: #2f2a27;
+        --text: #efe7df;
+        --sub: #b1a59c;
+        --accent: #f58b77;
+        --accent-text: #201d1b;
+        --accent-soft: #3d2b26;
+        --accent-strong: #f8a796;
+        --sun: #d9b071;
+        --rule: #3b3531;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="38" cy="24" r="14" fill="var(--sun)"/>
+        <path d="M14 46a10 10 0 0 1 9.6-10 13 13 0 0 1 25.2 3.4A8 8 0 0 1 48 56H18a8 8 0 0 1-4-10z" fill="var(--surface)" stroke="var(--sub)" stroke-width="2.5" stroke-linejoin="round"/>
+      </svg>
+      ごろごろ日和
+    </a>
+    <nav class="site-nav" aria-label="サイト内">
+      <a href="#features">できること</a>
+      <a href="#faq">よくある質問</a>
+      <a href="#support">サポート</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ===== アプリごとに変えるところ（2）ヒーロー ===== -->
+  <section class="app-hero">
+    <div class="wrap">
+      <img class="icon" src="/kattoko/icon.png" alt="カットコ！のアイコン" width="112" height="112">
+      <h1>カットコ！</h1>
+      <p class="catch">思いついたら、すぐカットコ！</p>
+      <p class="note">iPhone用・無料（家族との共有だけ300円の買い切り）</p>
+      <a class="btn" href="https://apps.apple.com/jp/app/id6815024317">App Storeで見る</a>
+    </div>
+  </section>
+
+  <!-- ===== アプリごとに変えるところ（3）できること（スクリーンショット3枚） ===== -->
+  <section class="section" id="features" aria-labelledby="features-title">
+    <div class="wrap">
+      <h2 id="features-title">できること</h2>
+      <p class="lead">画面の名前の例は「はる」と「なつ」です。</p>
+      <ul class="features">
+        <li>
+          <img src="/kattoko/screens/1.jpg" alt="カットコ！のホーム画面で、牛乳や食パンなどの買い物リストが並び、バナナと卵にチェックが付いている。" width="540" height="1171" loading="lazy">
+          <h3>思いついたらすぐメモ</h3>
+          <p>買うものは一言入れるだけ。お店ではタップでチェックして、買い忘れを防ぎます。</p>
+        </li>
+        <li>
+          <img src="/kattoko/screens/2.jpg" alt="よく買うもの画面で、お米や牛乳などが並び、にんじんと玉ねぎには「かっとこ中」と表示されている。" width="540" height="1171" loading="lazy">
+          <h3>よく買うものはワンタップ</h3>
+          <p>牛乳やお米など、いつもの品を登録しておけば、タップひとつでリストに追加できます。</p>
+        </li>
+        <li>
+          <img src="/kattoko/screens/3.jpg" alt="共有リスト「わが家の買い物リスト」の画面で、にんじんやカレールーの下に「はるが追加」「なつが追加」と表示されている。" width="540" height="1171" loading="lazy">
+          <h3>家族と同じリストを共有</h3>
+          <p>家族が足したものもすぐ反映。誰が追加したかも分かるので、頼みごとが伝わります。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== アプリごとに変えるところ（4）料金 ===== -->
+  <section class="section" aria-labelledby="price-title">
+    <div class="wrap">
+      <h2 id="price-title">家族で使う・料金</h2>
+      <p class="lead">サブスクはありません。買うのは「家族と共有する」機能だけです。</p>
+      <div class="price">
+        <div class="price-row"><div>ひとりで使う<br><span>買い物リスト、よく買うもの、履歴</span></div><b>無料</b></div>
+        <div class="price-row"><div>家族に招待されて使う<br><span>招待された人は、ずっと無料です</span></div><b>無料</b></div>
+        <div class="price-row"><div>家族とリストを共有する<br><span>リストを作る人の買い切り。自分を含めて4人まで</span></div><b>300円</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 大事にしていること（シリーズ共通。アプリに合わせて変える） ===== -->
+  <section class="section" aria-labelledby="promises-title">
+    <div class="wrap">
+      <h2 id="promises-title">大事にしていること</h2>
+      <ul class="promises">
+        <li><strong>広告を出しません</strong><span>使っている途中に、広告で邪魔をしません。</span></li>
+        <li><strong>サブスクはありません</strong><span>買うのは家族と共有する機能の300円だけです。</span></li>
+        <li><strong>データを集めません</strong><span>リストは、あなたの端末と、あなた自身のiCloudの中だけ。開発者は見られません。</span></li>
+        <li><strong>買い物だけに絞っています</strong><span>家事や予定の管理は入れていません。買い物のメモと共有だけなので、迷わず使えます。</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== アプリごとに変えるところ（5）よくある質問 ===== -->
+  <section class="section faq" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <h2 id="faq-title">よくある質問</h2>
+      <details>
+        <summary>iCloudは必要ですか？</summary>
+        <p>ひとりで使うだけなら、iCloudを使っていなくても使えます。家族とリストを共有するには、おたがいにiCloudへのサインインが必要です。</p>
+      </details>
+      <details>
+        <summary>家族も300円を払う必要がありますか？</summary>
+        <p>ありません。300円が必要なのは、リストを作って家族を招待する人だけです。招待された家族は無料です。</p>
+      </details>
+      <details>
+        <summary>何人まで共有できますか？</summary>
+        <p>リストを作る人を含めて4人までです。</p>
+      </details>
+      <details>
+        <summary>間違えてチェックしてしまいました</summary>
+        <p>もう一度タップすれば戻せます。チェックしたものは、最後に「KATTA!」ボタンを押したときにリストから消えます。</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ===== アプリごとに変えるところ（6）サポート・規約のリンク ===== -->
+  <section class="section" id="support" aria-labelledby="support-title">
+    <div class="wrap">
+      <h2 id="support-title">サポート・規約</h2>
+      <ul class="link-list">
+        <li><a href="/support/">お問い合わせ</a></li>
+        <li><a href="https://ryoswalker.github.io/kattoko-legal/privacy.html">プライバシーポリシー</a></li>
+        <li><a href="https://ryoswalker.github.io/kattoko-legal/terms.html">利用規約</a></li>
+        <li><a href="https://ryoswalker.github.io/kattoko-legal/tokushoho.html">特定商取引法に基づく表記</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== ほかのアプリ（apps.json から。自分は data-exclude で除く） ===== -->
+  <section class="section" aria-labelledby="more-title">
+    <div class="wrap">
+      <h2 id="more-title">ごろごろ日和のほかのアプリ</h2>
+      <ul class="app-grid" data-apps data-exclude="kattoko">
+        <li class="app-card"><div><h3><a href="/">アプリの一覧を見る</a></h3></div></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 ごろごろ日和</span>
+    <span><a href="/">ごろごろ日和のトップへ</a></span>
+  </div>
+</footer>
+
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

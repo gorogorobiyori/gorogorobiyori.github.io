@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="referrer" content="no-referrer">
+  <title>MATAIKO — 行きたい・行ったを、自分だけに｜ごろごろ日和</title>
+  <meta name="description" content="行きたいお店も、行ってよかった場所も。SNSに発信しない、自分だけのリスト。気になる場所は友だちにおすそわけ。広告なし・サブスクなし。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MATAIKO — 行きたい・行ったを、自分だけに">
+  <meta property="og:description" content="行きたいお店も、行ってよかった場所も。SNSに発信しない、自分だけのリスト。気になる場所は友だちにおすそわけ。広告なし・サブスクなし。">
+  <meta property="og:image" content="https://gorogorobiyori.github.io/mataiko/icon.png">
+  <meta property="og:url" content="https://gorogorobiyori.github.io/mataiko/">
+  <meta name="apple-itunes-app" content="app-id=6818145213">
+  <link rel="icon" href="/mataiko/icon.png">
+  <link rel="apple-touch-icon" href="/mataiko/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LINE+Seed+JP:wght@400;700;800&display=swap">
+  <link rel="stylesheet" href="/assets/site.css">
+  <style>
+    /*
+      ===== アプリごとに変えるところ（1）配色 =====
+      アプリのAsset Catalogと同じ値。MATAIKOは「ローズ×アイボリー」
+    */
+    :root {
+      --bg: #f6f1ec;
+      --surface: #ffffff;
+      --quiet: #ffffff;
+      --text: #3a3432;
+      --sub: #6f6661;
+      --accent: #a0666a;
+      --accent-text: #ffffff;
+      --accent-soft: #f3e4e3;
+      --accent-strong: #8e5557;
+      --sun: #7e9483;
+      --rule: #e8e0d9;
+    }
+    a { color: var(--accent-strong); }
+    .btn { color: var(--accent-text); }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #1f1b1a;
+        --surface: #2b2625;
+        --quiet: #2b2625;
+        --text: #eee6e1;
+        --sub: #a89e98;
+        --accent: #d39c9c;
+        --accent-text: #1f1b1a;
+        --accent-soft: #4a3435;
+        --accent-strong: #e3b3b2;
+        --sun: #a3b6a6;
+        --rule: #3a3331;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="38" cy="24" r="14" fill="var(--sun)"/>
+        <path d="M14 46a10 10 0 0 1 9.6-10 13 13 0 0 1 25.2 3.4A8 8 0 0 1 48 56H18a8 8 0 0 1-4-10z" fill="var(--surface)" stroke="var(--sub)" stroke-width="2.5" stroke-linejoin="round"/>
+      </svg>
+      ごろごろ日和
+    </a>
+    <nav class="site-nav" aria-label="サイト内">
+      <a href="#features">できること</a>
+      <a href="#faq">よくある質問</a>
+      <a href="#support">サポート</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ===== アプリごとに変えるところ（2）ヒーロー ===== -->
+  <section class="app-hero">
+    <div class="wrap">
+      <img class="icon" src="/mataiko/icon.png" alt="MATAIKOのアイコン" width="112" height="112">
+      <h1>MATAIKO</h1>
+      <p class="catch">行きたい・行ったを、自分だけに。</p>
+      <p class="note">iPhone用・無料（見せる機能だけ300円の買い切り）</p>
+      <a class="btn" href="https://apps.apple.com/jp/app/id6818145213">App Storeで見る</a>
+    </div>
+  </section>
+
+  <!-- ===== アプリごとに変えるところ（3）できること（スクリーンショット3枚） ===== -->
+  <section class="section" id="features" aria-labelledby="features-title">
+    <div class="wrap">
+      <h2 id="features-title">できること</h2>
+      <p class="lead">画面に出てくるお店や場所は、架空のものです。</p>
+      <ul class="features">
+        <li>
+          <img src="/mataiko/screens/1.jpg" alt="MATAIKOの一覧画面。喫茶ミモザや紅葉のきれいな庭園などの場所が、ジャンルのアイコンと「行きたい！」のラベル付きで並んでいる。" width="540" height="1171" loading="lazy">
+          <h3>行きたい順に並ぶ</h3>
+          <p>気になった場所を名前だけで保存。「行きたい！」が上に並び、季節の印も付けられます。</p>
+        </li>
+        <li>
+          <img src="/mataiko/screens/2.jpg" alt="パンケーキのお店の行った記録の画面。おすすめ度「いいね！」、ひとこと、鍵マークの付いた「自分だけ」の欄に誰と・メモが入っている。" width="540" height="1171" loading="lazy">
+          <h3>行ったら、ひとこと</h3>
+          <p>おすすめ度とひとことを記録。誰と行ったかやメモは、自分だけが見られます。</p>
+        </li>
+        <li>
+          <img src="/mataiko/screens/3.jpg" alt="おすそわけの画面。喫茶ミモザ・紅葉のきれいな庭園・パンケーキのお店の3件にチェックが付き、下に「3件を選んで次へ」のボタンがある。" width="540" height="1171" loading="lazy">
+          <h3>友だちにおすそわけ</h3>
+          <p>気になる場所を選んで、LINEで送るだけ。気持ちや自分だけのメモは渡りません。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== アプリごとに変えるところ（4）料金 ===== -->
+  <section class="section" aria-labelledby="price-title">
+    <div class="wrap">
+      <h2 id="price-title">料金</h2>
+      <p class="lead">サブスクはありません。買うのは「リストを見せる」機能だけです。</p>
+      <div class="price">
+        <div class="price-row"><div>自分のリストをつくる・記録する<br><span>行きたい場所、行った記録、季節の印</span></div><b>無料</b></div>
+        <div class="price-row"><div>友だちにおすそわけする・受け取る<br><span>LINEやメッセージで場所を渡せます</span></div><b>無料</b></div>
+        <div class="price-row"><div>リストを見せる<br><span>買い切り。家族など近しい人に、リストをそのまま見てもらえます（自分を含めて4人まで）</span></div><b>300円</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 大事にしていること（シリーズ共通。アプリに合わせて変える） ===== -->
+  <section class="section" aria-labelledby="promises-title">
+    <div class="wrap">
+      <h2 id="promises-title">大事にしていること</h2>
+      <ul class="promises">
+        <li><strong>広告を出しません</strong><span>使っている途中に、広告で邪魔をしません。</span></li>
+        <li><strong>サブスクはありません</strong><span>買うのは「リストを見せる」機能の300円だけです。</span></li>
+        <li><strong>データを集めません</strong><span>記録は、あなたの端末と、あなた自身のiCloudの中だけ。開発者は見られません。</span></li>
+        <li><strong>発信しません</strong><span>フォローやいいね、公開プロフィールはありません。あなたの記録は、あなたのものです。</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== アプリごとに変えるところ（5）よくある質問 ===== -->
+  <section class="section faq" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <h2 id="faq-title">よくある質問</h2>
+      <details>
+        <summary>iCloudは必要ですか？</summary>
+        <p>記録はiPhoneの中に保存されるので、iCloudを使っていなくても使えます。おすそわけ・リストを見せるには、iCloudへのサインインが必要です。</p>
+      </details>
+      <details>
+        <summary>おすそわけすると、何が相手に届きますか？</summary>
+        <p>場所の名前・URL・ジャンル・季節と、選んだときだけおすすめ度とひとことです。行きたい理由・誰と行ったか・自分だけのメモ・あなたの名前は渡りません。</p>
+      </details>
+      <details>
+        <summary>おすそわけを受け取るのに、お金はかかりますか？</summary>
+        <p>かかりません。受け取った場所は、自分のリストにコピーできます（受け取り期限は7日です）。</p>
+      </details>
+      <details>
+        <summary>リストを見せた相手に、書き換えられませんか？</summary>
+        <p>見る人は見るだけで、書き換えはできません。見せたくない場所は、場所ごとに隠せます。</p>
+      </details>
+      <details>
+        <summary>アプリを削除すると、記録はどうなりますか？</summary>
+        <p>記録も消えます。iPhoneのiCloudバックアップから復元した場合は戻ります。</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ===== アプリごとに変えるところ（6）サポート・規約のリンク ===== -->
+  <section class="section" id="support" aria-labelledby="support-title">
+    <div class="wrap">
+      <h2 id="support-title">サポート・規約</h2>
+      <ul class="link-list">
+        <li><a href="/support/">お問い合わせ</a></li>
+        <li><a href="https://ryoswalker.github.io/mataiko-legal/privacy.html">プライバシーポリシー</a></li>
+        <li><a href="https://ryoswalker.github.io/mataiko-legal/terms.html">利用規約</a></li>
+        <li><a href="https://ryoswalker.github.io/mataiko-legal/tokushoho.html">特定商取引法に基づく表記</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== ほかのアプリ（apps.json から。自分は data-exclude で除く） ===== -->
+  <section class="section" aria-labelledby="more-title">
+    <div class="wrap">
+      <h2 id="more-title">ごろごろ日和のほかのアプリ</h2>
+      <ul class="app-grid" data-apps data-exclude="mataiko">
+        <li class="app-card"><div><h3><a href="/">アプリの一覧を見る</a></h3></div></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 ごろごろ日和</span>
+    <span><a href="/">ごろごろ日和のトップへ</a></span>
+  </div>
+</footer>
+
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "apps": [
+    {
+      "id": "6815024317",
+      "slug": "kattoko",
+      "name": "カットコ！",
+      "tagline": "家族で使える買い忘れ防止リスト",
+      "iconURL": "https://gorogorobiyori.github.io/kattoko/icon.png",
+      "pageURL": "https://gorogorobiyori.github.io/kattoko/",
+      "accent": "#ff9b85",
+      "screenshotURL": "https://gorogorobiyori.github.io/kattoko/screens/1.jpg"
+    },
+    {
+      "id": "6818145213",
+      "slug": "mataiko",
+      "name": "MATAIKO",
+      "tagline": "行きたい・行ったを、自分だけに",
+      "iconURL": "https://gorogorobiyori.github.io/mataiko/icon.png",
+      "pageURL": "https://gorogorobiyori.github.io/mataiko/",
+      "accent": "#a0666a",
+      "screenshotURL": "https://gorogorobiyori.github.io/mataiko/screens/1.jpg"
+    },
+    {
+      "id": "6820086568",
+      "slug": "onedari",
+      "name": "おねだり！",
+      "tagline": "欲しいものを、大切な人にだけ",
+      "iconURL": "https://gorogorobiyori.github.io/onedari/icon.png",
+      "pageURL": "https://gorogorobiyori.github.io/onedari/",
+      "accent": "#e2725b",
+      "screenshotURL": "https://gorogorobiyori.github.io/onedari/screens/1.jpg"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="referrer" content="no-referrer">
+  <title>おねだり！ — 欲しいものを、大切な人にだけ｜ごろごろ日和</title>
+  <meta name="description" content="欲しいものを書き留めて、パートナーや家族など大切な人にだけ見せられるリスト。届くのはリアクションだけ。広告なし・サブスクなし。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="おねだり！ — 欲しいものを、大切な人にだけ">
+  <meta property="og:description" content="言いにくいおねだりを、明るく。大切な人にだけ見せる欲しいものリスト。">
+  <meta property="og:image" content="https://gorogorobiyori.github.io/onedari/icon.png">
+  <meta property="og:url" content="https://gorogorobiyori.github.io/onedari/">
+  <meta name="apple-itunes-app" content="app-id=6820086568">
+  <link rel="icon" href="/onedari/icon.png">
+  <link rel="apple-touch-icon" href="/onedari/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LINE+Seed+JP:wght@400;700;800&display=swap">
+  <link rel="stylesheet" href="/assets/site.css">
+  <style>
+    /*
+      ===== アプリごとに変えるところ（1）配色 =====
+      アプリのAsset Catalogと同じ値。おねだり！は「コーラル×ネイビー」
+    */
+    :root {
+      --bg: #fbf7f2;            /* BackgroundMilk */
+      --surface: #ffffff;       /* Surface */
+      --text: #27324a;          /* TextMain */
+      --sub: #736b64;           /* TextSub */
+      --accent: #d9634a;        /* CoralButton（白文字は太字・大きめで使う） */
+      --accent-text: #ffffff;   /* OnCoralButton */
+      --accent-soft: #fbe3dc;   /* CoralSoft */
+      --accent-strong: #b04a33; /* CoralText（小さい文字に使う） */
+      --sun: #c9a86a;           /* Gold（装飾のみ） */
+      --rule: #ece3d8;
+      --quiet: #ffffff;
+    }
+    a { color: var(--accent-strong); }
+    .btn { color: var(--accent-text); }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #1e1b19;
+        --surface: #2a2623;
+        --text: #ede6de;
+        --sub: #a79f97;
+        --accent: #f08a70;
+        --accent-text: #1e1b19;
+        --accent-soft: #3a2722;
+        --accent-strong: #f5a893;
+        --sun: #d8bc85;
+        --rule: #3a3531;
+        --quiet: #2a2623;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="38" cy="24" r="14" fill="var(--sun)"/>
+        <path d="M14 46a10 10 0 0 1 9.6-10 13 13 0 0 1 25.2 3.4A8 8 0 0 1 48 56H18a8 8 0 0 1-4-10z" fill="var(--surface)" stroke="var(--sub)" stroke-width="2.5" stroke-linejoin="round"/>
+      </svg>
+      ごろごろ日和
+    </a>
+    <nav class="site-nav" aria-label="サイト内">
+      <a href="#features">できること</a>
+      <a href="#faq">よくある質問</a>
+      <a href="#support">サポート</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ===== アプリごとに変えるところ（2）ヒーロー ===== -->
+  <section class="app-hero">
+    <div class="wrap">
+      <img class="icon" src="/onedari/icon.png" alt="おねだり！のアイコン" width="112" height="112">
+      <h1>おねだり！</h1>
+      <p class="catch">欲しいものを、大切な人にだけ。</p>
+      <p class="note">iPhone用・無料（見せる機能だけ300円の買い切り）</p>
+      <a class="btn" href="https://apps.apple.com/jp/app/id6820086568">App Storeで見る</a>
+    </div>
+  </section>
+
+  <!-- ===== アプリごとに変えるところ（3）できること（スクリーンショット3枚） ===== -->
+  <section class="section" id="features" aria-labelledby="features-title">
+    <div class="wrap">
+      <h2 id="features-title">できること</h2>
+      <p class="lead">画面の名前の例は「はる」と「なつ」です。</p>
+      <ul class="features">
+        <li>
+          <img src="/onedari/screens/1.jpg" alt="わたしのおねだりの画面。TOP3と、オススメの印が付いたアイテムが並んでいる" width="540" height="1171" loading="lazy">
+          <h3>思いついたら、すぐメモ</h3>
+          <p>名前だけでも保存できます。いちばん欲しいものはTOP3に、「これも欲しい」にはオススメの印を。</p>
+        </li>
+        <li>
+          <img src="/onedari/screens/2.jpg" alt="なつのおねだりリストを見せてもらっている画面" width="540" height="1171" loading="lazy">
+          <h3>大切な人にだけ見せる</h3>
+          <p>招待した人だけが、あなたのリストを見られます。お店のリンクも、そのまま開けます。</p>
+        </li>
+        <li>
+          <img src="/onedari/screens/3.jpg" alt="リアクションが届いたことを知らせる画面" width="540" height="1171" loading="lazy">
+          <h3>届くのはリアクションだけ</h3>
+          <p>❤️ 👀 😆 🤔 の4つで、気軽に返事。買うかどうかは、相手におまかせです。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== アプリごとに変えるところ（4）家族で使う・料金 ===== -->
+  <section class="section" aria-labelledby="price-title">
+    <div class="wrap">
+      <h2 id="price-title">家族で使う・料金</h2>
+      <p class="lead">サブスクはありません。買うのは「見せる」機能だけです。</p>
+      <div class="price">
+        <div class="price-row"><div>自分のリストをつくる・メモする<br><span>TOP3、オススメ、ジャンル、リンク、値段のメモ</span></div><b>無料</b></div>
+        <div class="price-row"><div>見せてもらう・リアクションする<br><span>招待された人は、ずっと無料です</span></div><b>無料</b></div>
+        <div class="price-row"><div>自分のリストを見せる<br><span>買い切り。見せたい人を招待できます（自分を含めて4人まで）</span></div><b>300円</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 大事にしていること（シリーズ共通。アプリに合わせて1行だけ変える） ===== -->
+  <section class="section" aria-labelledby="promises-title">
+    <div class="wrap">
+      <h2 id="promises-title">大事にしていること</h2>
+      <ul class="promises">
+        <li><strong>広告を出しません</strong><span>使っている途中に、広告で邪魔をすることはありません。</span></li>
+        <li><strong>サブスクはありません</strong><span>買うのは「見せる」機能の300円だけです。</span></li>
+        <li><strong>データを集めません</strong><span>リストは、あなたの端末と、あなた自身のiCloudの中だけ。開発者は見られません。</span></li>
+        <li><strong>催促しません</strong><span>「買った？」「まだ？」のような言葉は出しません。買うかどうかは相手の自由です。</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== アプリごとに変えるところ（5）よくある質問 ===== -->
+  <section class="section faq" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <h2 id="faq-title">よくある質問</h2>
+      <details>
+        <summary>iCloudは必要ですか？</summary>
+        <p>自分のリストは、iCloudを使っていなくてもiPhoneの中で使えます。リストを見せる・見せてもらうには、おたがいにiCloudへのサインインが必要です。</p>
+      </details>
+      <details>
+        <summary>招待のリンクを開いても、アプリが開きません</summary>
+        <p>LINEなどのアプリ内ブラウザでは、アプリが開かないことがあります。招待のページの案内に沿ってリンクをコピーし、アプリの設定にある「コピーした招待リンクを開く」から開いてください。</p>
+      </details>
+      <details>
+        <summary>見せてもらう側も、お金がかかりますか？</summary>
+        <p>かかりません。300円が必要なのは、自分のリストを見せる人だけです。</p>
+      </details>
+      <details>
+        <summary>買ったかどうかは、相手に伝わりますか？</summary>
+        <p>伝わりません。おねだり！は「買う予定」「買った」を記録しません。もらったものは、自分でリストから消してください。</p>
+      </details>
+      <details>
+        <summary>機種変更したら、リストはどうなりますか？</summary>
+        <p>同じApple Accountでサインインしていれば、見せていたリストを新しいiPhoneでも続けられます。アプリを開くと、続けて見せるかどうかを確認します。</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ===== アプリごとに変えるところ（6）サポート・規約のリンク ===== -->
+  <section class="section" id="support" aria-labelledby="support-title">
+    <div class="wrap">
+      <h2 id="support-title">サポート・規約</h2>
+      <ul class="link-list">
+        <li><a href="/support/">お問い合わせ</a></li>
+        <li><a href="https://ryoswalker.github.io/onedari-legal/privacy.html">プライバシーポリシー</a></li>
+        <li><a href="https://ryoswalker.github.io/onedari-legal/terms.html">利用規約</a></li>
+        <li><a href="https://ryoswalker.github.io/onedari-legal/tokushoho.html">特定商取引法に基づく表記</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== ほかのアプリ（apps.json から。自分は data-exclude で除く） ===== -->
+  <section class="section" aria-labelledby="more-title">
+    <div class="wrap">
+      <h2 id="more-title">ごろごろ日和のほかのアプリ</h2>
+      <ul class="app-grid" data-apps data-exclude="onedari">
+        <li class="app-card"><div><h3><a href="/">アプリの一覧を見る</a></h3></div></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 ごろごろ日和</span>
+    <span><a href="/">ごろごろ日和のトップへ</a></span>
+  </div>
+</footer>
+
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
