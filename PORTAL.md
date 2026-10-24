@@ -12,14 +12,14 @@
 | `index.html` | トップ（屋号・アプリ一覧・大事にしていること） |
 | `apps.json` | アプリ一覧。トップ、各アプリの「ほかのアプリ」、アプリ内のクロスプロモーションが読む |
 | `assets/site.css` / `assets/site.js` | ポータル共通の見た目と、apps.json からカードを並べる処理（招待用の invite.css / invite.js とは別） |
-| `<app>/index.html` | アプリのページ（`kattoko/`・`mataiko/`・`onedari/`） |
+| `<app>/index.html` | アプリのページ（`kattoko/`・`mataiko/`・`onedari/`・`kozukai/`） |
 | `<app>/screens/1〜3.jpg` | アプリのページのスクリーンショット（幅540px・JPEG） |
 | `support/index.html` | 共通のサポート窓口 |
 | `privacy/index.html` | このサイト自体のプライバシー |
 
 ## アプリのページを足すとき
 
-いまあるのは `kattoko/`・`mataiko/`・`onedari/`。どれも同じ形なので、近いものをコピーして作る。
+いまあるのは `kattoko/`・`mataiko/`・`onedari/`・`kozukai/`。どれも同じ形なので、近いものをコピーして作る。
 
 1. 既存のアプリのページ（例：`mataiko/index.html`）を `<app>/index.html` にコピーする
 2. コメント「アプリごとに変えるところ（1）〜（6）」を書き換える

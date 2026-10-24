@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="referrer" content="no-referrer">
+  <title>KOZUKAI — 立て替えをメモして、おこづかいに｜ごろごろ日和</title>
+  <meta name="description" content="立て替えた分やお願いを日々メモして、支給日にいつものお小遣いとまとめる、自分のおこづかいの台帳。家族1人に確認をお願いできます。広告なし・サブスクなし。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="KOZUKAI — 立て替えをメモして、おこづかいに">
+  <meta property="og:description" content="立て替えた分やお願いを日々メモして、支給日にいつものお小遣いとまとめる、自分のおこづかいの台帳。家族1人に確認をお願いできます。広告なし・サブスクなし。">
+  <meta property="og:image" content="https://gorogorobiyori.github.io/kozukai/icon.png">
+  <meta property="og:url" content="https://gorogorobiyori.github.io/kozukai/">
+  <meta name="apple-itunes-app" content="app-id=6823162192">
+  <link rel="icon" href="/kozukai/icon.png">
+  <link rel="apple-touch-icon" href="/kozukai/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LINE+Seed+JP:wght@400;700;800&display=swap">
+  <link rel="stylesheet" href="/assets/site.css">
+  <style>
+    /*
+      ===== アプリごとに変えるところ（1）配色 =====
+      アプリのAsset Catalogと同じ値。KOZUKAIは「深緑×クラフト紙」
+    */
+    :root {
+      --bg: #f7f3ea;
+      --surface: #ffffff;
+      --quiet: #ffffff;
+      --text: #2b3a33;
+      --sub: #6b665c;
+      --accent: #2f6b4f;
+      --accent-text: #ffffff;
+      --accent-soft: #e3eee7;
+      --accent-strong: #2b5a43;
+      --sun: #c49a6c;
+      --rule: #e4dccb;
+    }
+    a { color: var(--accent-strong); }
+    .btn { color: var(--accent-text); }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #1c201e;
+        --surface: #262b28;
+        --quiet: #262b28;
+        --text: #ece7dd;
+        --sub: #a8a398;
+        --accent: #7fc3a0;
+        --accent-text: #1c201e;
+        --accent-soft: #2e3d35;
+        --accent-strong: #9ed6b8;
+        --sun: #d7b48a;
+        --rule: #3a3f3b;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="38" cy="24" r="14" fill="var(--sun)"/>
+        <path d="M14 46a10 10 0 0 1 9.6-10 13 13 0 0 1 25.2 3.4A8 8 0 0 1 48 56H18a8 8 0 0 1-4-10z" fill="var(--surface)" stroke="var(--sub)" stroke-width="2.5" stroke-linejoin="round"/>
+      </svg>
+      ごろごろ日和
+    </a>
+    <nav class="site-nav" aria-label="サイト内">
+      <a href="#features">できること</a>
+      <a href="#faq">よくある質問</a>
+      <a href="#support">サポート</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ===== アプリごとに変えるところ（2）ヒーロー ===== -->
+  <section class="app-hero">
+    <div class="wrap">
+      <img class="icon" src="/kozukai/icon.png" alt="KOZUKAIのアイコン" width="112" height="112">
+      <h1>KOZUKAI</h1>
+      <p class="catch">立て替えをメモして、おこづかいに。</p>
+      <p class="note">iPhone用・無料（確認のお願いだけ300円）</p>
+      <a class="btn" href="https://apps.apple.com/jp/app/id6823162192">App Storeで見る</a>
+    </div>
+  </section>
+
+  <!-- ===== アプリごとに変えるところ（3）できること（スクリーンショット3枚） ===== -->
+  <section class="section" id="features" aria-labelledby="features-title">
+    <div class="wrap">
+      <h2 id="features-title">できること</h2>
+      <p class="lead">画面の名前の例は「はる」と「なつ」です。</p>
+      <ul class="features">
+        <li>
+          <img src="/kozukai/screens/1.jpg" alt="KOZUKAIのおこづかいメモの画面。食費・電車の立て替えと、散髪・仕事の本のお願いが、日付と金額付きで並んでいる。" width="540" height="1171" loading="lazy">
+          <h3>忘れないうちにメモ</h3>
+          <p>立て替えた分やお願いを、金額とジャンルだけでさっと記録。「立て替え」「お願い」のラベルは自動で付きます。</p>
+        </li>
+        <li>
+          <img src="/kozukai/screens/2.jpg" alt="確認する人の画面。「10月のおこづかい」5,500円の美容院の項目にOKが付き、下に「渡しました」のボタンがある。" width="540" height="1171" loading="lazy">
+          <h3>確認は、OKかちょっと相談</h3>
+          <p>家族1人に確認をお願いすると、まとめたおこづかいがアプリに届きます。返すのは、項目ごとのOKか相談だけ。</p>
+        </li>
+        <li>
+          <img src="/kozukai/screens/3.jpg" alt="これまでの画面。受け取り待ちの10月のおこづかいと、受け取り済みの7月から9月のおこづかいが、金額付きで並んでいる。" width="540" height="1171" loading="lazy">
+          <h3>これまでも、ひと目で</h3>
+          <p>受け取り待ちと受け取り済みのおこづかいを、月ごとに。ジャンルごとや年の合計も見られます。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== アプリごとに変えるところ（4）料金 ===== -->
+  <section class="section" aria-labelledby="price-title">
+    <div class="wrap">
+      <h2 id="price-title">料金</h2>
+      <p class="lead">サブスクはありません。買うのは「確認をお願いする」機能だけです。</p>
+      <div class="price">
+        <div class="price-row"><div>メモする・まとめる<br><span>おこづかいメモ、まとめる、テキストで送る、これまで</span></div><b>無料</b></div>
+        <div class="price-row"><div>確認する人として使う<br><span>招待された人は、ずっと無料です</span></div><b>無料</b></div>
+        <div class="price-row"><div>確認をお願いする<br><span>買い切り。家族1人を「確認する人」に招待できます</span></div><b>300円</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 大事にしていること（シリーズ共通。アプリに合わせて変える） ===== -->
+  <section class="section" aria-labelledby="promises-title">
+    <div class="wrap">
+      <h2 id="promises-title">大事にしていること</h2>
+      <ul class="promises">
+        <li><strong>広告を出しません</strong><span>使っている途中に、広告で邪魔をしません。</span></li>
+        <li><strong>サブスクはありません</strong><span>買うのは「確認をお願いする」機能の300円だけです。</span></li>
+        <li><strong>データを集めません</strong><span>記録は、あなたの端末と、あなた自身のiCloudの中だけ。開発者は見られません。</span></li>
+        <li><strong>お金は動かしません</strong><span>送金・決済・銀行との連携はしません。メモして、まとめて、確認するまでです。</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== アプリごとに変えるところ（5）よくある質問 ===== -->
+  <section class="section faq" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <h2 id="faq-title">よくある質問</h2>
+      <details>
+        <summary>iCloudは必要ですか？</summary>
+        <p>記録はiPhoneの中に保存されるので、iCloudを使っていなくても使えます。確認をお願いする・確認するには、iCloudへのサインインが必要です。</p>
+      </details>
+      <details>
+        <summary>確認する人も、お金がかかりますか？</summary>
+        <p>かかりません。アプリを入れて、招待を開くだけです。300円が必要なのは、確認をお願いする人だけです。</p>
+      </details>
+      <details>
+        <summary>確認する人に、おこづかいメモは見えますか？</summary>
+        <p>見えません。届くのは、まとめたおこづかいだけです。</p>
+      </details>
+      <details>
+        <summary>「ちょっと相談」になった項目は、どうなりますか？</summary>
+        <p>「渡しました」が返ってくると、おこづかいメモに戻ります。話し合ってから、次にまとめ直せます。</p>
+      </details>
+      <details>
+        <summary>お金の受け渡しも、アプリでできますか？</summary>
+        <p>できません。送金や決済はしません。渡したことを記録するまでです。</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ===== アプリごとに変えるところ（6）サポート・規約のリンク ===== -->
+  <section class="section" id="support" aria-labelledby="support-title">
+    <div class="wrap">
+      <h2 id="support-title">サポート・規約</h2>
+      <ul class="link-list">
+        <li><a href="/support/">お問い合わせ</a></li>
+        <li><a href="https://ryoswalker.github.io/kozukai-legal/privacy.html">プライバシーポリシー</a></li>
+        <li><a href="https://ryoswalker.github.io/kozukai-legal/terms.html">利用規約</a></li>
+        <li><a href="https://ryoswalker.github.io/kozukai-legal/tokushoho.html">特定商取引法に基づく表記</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== ほかのアプリ（apps.json から。自分は data-exclude で除く） ===== -->
+  <section class="section" aria-labelledby="more-title">
+    <div class="wrap">
+      <h2 id="more-title">ごろごろ日和のほかのアプリ</h2>
+      <ul class="app-grid" data-apps data-exclude="kozukai">
+        <li class="app-card"><div><h3><a href="/">アプリの一覧を見る</a></h3></div></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 ごろごろ日和</span>
+    <span><a href="/">ごろごろ日和のトップへ</a></span>
+  </div>
+</footer>
+
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

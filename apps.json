@@ -30,6 +30,16 @@
       "pageURL": "https://gorogorobiyori.github.io/onedari/",
       "accent": "#e2725b",
       "screenshotURL": "https://gorogorobiyori.github.io/onedari/screens/1.jpg"
+    },
+    {
+      "id": "6823162192",
+      "slug": "kozukai",
+      "name": "KOZUKAI",
+      "tagline": "立て替えをメモして、おこづかいに",
+      "iconURL": "https://gorogorobiyori.github.io/kozukai/icon.png",
+      "pageURL": "https://gorogorobiyori.github.io/kozukai/",
+      "accent": "#2f6b4f",
+      "screenshotURL": "https://gorogorobiyori.github.io/kozukai/screens/1.jpg"
     }
   ]
 }
